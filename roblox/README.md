@@ -1,4 +1,4 @@
-# Roblox — Free Scripts
+# Roblox Free Scripts
 
 Luau scripts for Roblox Studio. All three run **server-side**, so they can't be
 bypassed or triggered by a client.
@@ -38,9 +38,9 @@ Partial names work, so `/kick ste` finds `Steve123`. In a game owned by your own
 account, you always have access, even with an empty list.
 
 **Settings**
-- `COMMAND_PREFIX` — the command players type. Default `/kick `.
-- `KICK_MESSAGE` — what the kicked player sees.
-- `PROTECT_ADMINS` — stops admins kicking one another. On by default.
+- `COMMAND_PREFIX`: the command players type. Default `/kick `.
+- `KICK_MESSAGE`: what the kicked player sees.
+- `PROTECT_ADMINS`: stops admins kicking one another. On by default.
 
 **Notes**
 - The command is read from `Player.Chatted` on the server, so the admin check
@@ -48,7 +48,7 @@ account, you always have access, even with an empty list.
 - You can't kick yourself, and results are printed to the **server output**,
   not in-game chat.
 - In a **group-owned** game the owner fallback doesn't apply, so add every admin
-  to `ADMIN_IDS` — the script warns at startup if nobody would have access.
+  to `ADMIN_IDS`. The script warns at startup if nobody would have access.
 
 ---
 
@@ -72,7 +72,7 @@ Turns any part into an instant kill on contact.
 
 [`shop-to-base-teleport.lua`](shop-to-base-teleport.lua)
 
-A pad that moves players to a fixed destination — a shop exit back to a home
+A pad that moves players to a fixed destination, such as a shop exit back to a home
 base, for example.
 
 **Placement:** inside the teleport pad Part, as a **Script** (not a LocalScript).
@@ -86,7 +86,7 @@ local COOLDOWN = 1        -- seconds before the same player can re-trigger
 ```
 
 The destination can be a **Part or a Model**, and it can sit anywhere in
-`Workspace` — including inside a folder.
+`Workspace`, including inside a folder.
 
 **Notes**
 - The cooldown is **per player**, so one person using the pad never blocks
@@ -106,6 +106,6 @@ The destination can be a **Part or a Model**, and it can sit anywhere in
 4. Edit the configuration block at the top, if the script has one.
 5. Press **Play** and check the **Output** window.
 
-Setup problems show up in Output with a tag in brackets, such as `[Teleport]` or `[Admin System]` — a missing
+Setup problems show up in Output with a tag in brackets, such as `[Teleport]` or `[Admin System]`. A missing
 admin list or a misspelled destination names itself there rather than failing
 quietly.

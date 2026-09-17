@@ -1,5 +1,5 @@
 --[[
-	Shop to Base Teleport — Vendetta Scripts
+	Shop to Base Teleport | Vendetta Scripts
 	More scripts: https://venscripts.dev  |  Support & updates: https://discord.gg/9VaUnWTahk
 	Version 1.0.0
 
@@ -74,11 +74,11 @@ end)
 -- SETUP CHECKS (run once on startup)
 -- ==========================================
 if not destination then
-	warn(("[Teleport] No part or model named '%s' found in Workspace - this pad "
+	warn(("[Teleport] No part or model named '%s' found in Workspace, so this pad "
 		.. "will do nothing. Check the spelling in DESTINATION_NAME.")
 		:format(DESTINATION_NAME))
 elseif not (destination:IsA("BasePart") or destination:IsA("Model")) then
-	warn(("[Teleport] '%s' is a %s - it needs to be a Part or a Model.")
+	warn(("[Teleport] '%s' is a %s, but it needs to be a Part or a Model.")
 		:format(DESTINATION_NAME, destination.ClassName))
 	destination = nil
 end

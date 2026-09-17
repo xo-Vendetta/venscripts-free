@@ -1,12 +1,12 @@
 --[[
-	Killbrick — Vendetta Scripts
+	Killbrick | Vendetta Scripts
 	More scripts: https://venscripts.dev  |  Support & updates: https://discord.gg/9VaUnWTahk
 	Version 1.0.0
 
 	Placement: inside the brick, as a Script (not a LocalScript).
 	Server-side, so the kill cannot be blocked by a client.
 
-	No configuration needed — drop it in and the brick is lethal.
+	No configuration needed. Drop it in and the brick is lethal.
 
 	Support: venscripts.dev
 --]]

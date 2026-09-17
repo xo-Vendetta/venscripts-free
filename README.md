@@ -1,7 +1,7 @@
-# VenScripts — Free Scripts
+# VenScripts Free Scripts
 
 Free scripts for game servers and game developers, released with full,
-readable source. No dependencies, no account, no catch — download one, read it,
+readable source. No dependencies, no account, no catch. Download one, read it,
 and use it in whatever you're building.
 
 It started with Roblox and is growing to cover more games. The paid catalogue,
@@ -30,8 +30,8 @@ Every script follows the same few rules, whatever the game:
 
 - **Settings live in one clearly marked block** at the top, under
   `CONFIGURATION`. Nothing below it needs touching.
-- **Server-side where it matters.** Anything that affects gameplay — kicks,
-  kills, teleports — runs where players can't tamper with it.
+- **Server-side where it matters.** Anything that affects gameplay, like kicks,
+  kills and teleports, runs where players can't tamper with it.
 - **Problems say so.** A misspelled name or missing setup is reported in the
   game's output or console, tagged so you can tell which script it came from, rather than failing
   silently.
@@ -50,7 +50,7 @@ Every script follows the same few rules, whatever the game:
 ## Licence
 
 Released under the [MIT Licence](LICENSE). Use the scripts in personal or
-commercial projects and change them however you like — just keep the copyright
+commercial projects and change them however you like. Just keep the copyright
 notice.
 
 ---
@@ -63,5 +63,5 @@ notice.
 - **Want a script for your game?** Suggest it in the Discord.
 
 All scripts here are written and maintained by VenScripts, so pull requests
-aren't merged — but bug reports and ideas are always welcome, and a good idea
+aren't merged, but bug reports and ideas are always welcome, and a good idea
 may well turn into the next free script.

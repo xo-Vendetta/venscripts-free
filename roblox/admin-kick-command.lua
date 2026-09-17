@@ -1,5 +1,5 @@
 --[[
-	Admin Kick Command — Vendetta Scripts
+	Admin Kick Command | Vendetta Scripts
 	More scripts: https://venscripts.dev  |  Support & updates: https://discord.gg/9VaUnWTahk
 	Version 1.0.0
 
@@ -87,7 +87,7 @@ local function onPlayerChatted(player, message)
 	local target = findPlayer(targetName)
 
 	if not target then
-		warn(("[Admin System] %s tried to kick '%s' - no matching player here.")
+		warn(("[Admin System] %s tried to kick '%s', but no matching player is here.")
 			:format(player.Name, targetName))
 		return
 	end
@@ -143,7 +143,7 @@ end
 
 if #ADMIN_IDS == 0 then
 	if game.CreatorType == Enum.CreatorType.User then
-		warn("[Admin System] No ADMIN_IDS set - only the game owner can use /kick.")
+		warn("[Admin System] No ADMIN_IDS set, so only the game owner can use /kick.")
 	else
 		warn("[Admin System] No ADMIN_IDS set, and this game is group-owned so the "
 			.. "owner fallback does not apply. Nobody can use /kick.")
